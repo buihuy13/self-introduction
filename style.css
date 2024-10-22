@@ -1,0 +1,125 @@
+body {
+    background-color: #333;
+}
+.border {
+    border: 1px solid #fff;
+}
+.nav-item {
+    border-radius: 7px;
+}
+.nav-item:hover {
+    background-color:#0b5ed7;
+    transition: all 0.15s linear;
+}
+.nav-link {
+    color: #fff;
+}
+svg {
+    width: 130px;
+    height: 130px;
+}
+.skill {
+    cursor:pointer;
+    height: 100px;
+}
+.skill:hover {
+    transition: all 0.15s ease-in-out;
+    transform: scale(1.05);
+}
+.myskills {
+    margin-top: 80px;
+}
+li {
+    list-style: none;
+}
+.skills-icon {
+    padding: 12px;
+    font-size: larger;
+}
+@media all and (max-width: 768px) {
+    .skill {
+        height: 70px;
+    }
+}
+@media all and (min-width:576px) and (max-width: 768px)
+{
+    .skills-icon {
+        padding: 8px;
+        font-size: medium;
+    }
+    .myskills {
+        margin-top: 60px;
+    }
+}
+@media all and (max-width:576px)
+{
+    .skills-icon {
+        padding: 6px;
+        font-size: small;
+    }
+    .myskills {
+        margin-top: 50px;
+    }
+}
+
+footer {
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a > .fa-brands {
+    margin-right: 8px;
+}
+
+.fa-paper-plane {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.none {
+    display: none;
+}
+
+.layout {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.leetcode-skill, .backend-skill, .project-skill {
+    background-color: #fff;
+    animation: fadeDown 0.75s 1 ease-in-out;
+    cursor: default;
+}
+
+.fa-x {
+    position: absolute;
+    cursor: pointer;
+    right: 1%;
+}
+
+@keyframes fadeDown {
+    from {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card {
+    width: 40rem;
+}
